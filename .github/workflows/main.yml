@@ -33,6 +33,7 @@ jobs:
       - name: Run Honkit
         run: |
           npm install honkit --save-dev
+          npm install gitbook-plugin-betterchinese --save-dev
           npx honkit build . public --log=debug
           npx honkit pdf . byte-of-python.pdf
           npx honkit epub . byte-of-python.epub
